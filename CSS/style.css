@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex-grow: 1;
+    background-color: white;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #FF3333;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 1.3vw 2vw 3vh 2vw;
+    font-weight: bold;
+    position: relative;
+	overflow: hidden;
+	transition: color .7s ease-in-out; 
+}
+
+nav a::before, 
+nav a::after {
+	content: "";
+	width: 0;
+	height: 5px;
+    background-color: #A50321;
+	transition: width .15s ease-out;
+	position: absolute;
+	bottom: 0;
+}
+
+nav a::before {
+	left: 50%;
+	transform: translateX(-50%); 
+}
+nav a::after {
+	right: 50%;
+	transform: translateX(50%); 
+}
+nav a:hover::before, 
+nav a:hover::after {
+	width: 100%;
+	transition-duration: .25s;
+}
+
+nav a.right {
+    text-decoration: none;
+    color: #FF3333;
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 1.3vw 2vw 3vh 2vw;
+}
+
+.nav-active {
+    color: #383838;
+}
+
+nav a:hover {
+    background-color: rgb(226, 226, 226);
+    color: #A50321;
+}
+
+.menu-button {
+    flex-grow: 1;
+    display: none;
+}
+
+.menu-button button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.6rem;
+    margin-left: 2vw;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FF3333;
+    padding: 1.5em;
+
+    transform: translateX(-100%);
+
+    transition: transform 300ms ease-in-out;
+}
+
+.mobile-nav-open {
+    transform: translateX(0%);
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    display: block;
+    margin-bottom: 3.5vh;
+}
+
+.mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.close-button button {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: white;
+}
+
+.main-content {
+    height:1000px;
+    font-size:36px;
+    margin: 1.5rem;
+}
+
+@media only screen and (max-width: 780px) {
+    nav {
+      display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .menu-button{
+        display: block;
+    }
+}
+
+
+.parallax-home1 {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url(../images/firetower.jpg);
+}
+
+.parallax-home2 {
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url(../images/firefight2.png);
+}
+ 
+
+footer {
+    background-color: #383838;
+}
