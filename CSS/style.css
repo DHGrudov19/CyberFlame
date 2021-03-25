@@ -16,11 +16,14 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+/* Header */
 header {
     display: flex;
     align-items: center;
 }
 
+
+/* Navbar */
 nav {
     flex-grow: 1;
     background-color: white;
@@ -134,12 +137,16 @@ nav a:hover {
     color: white;
 }
 
+
+/* Body */
 .main-content {
     height:1000px;
     font-size:36px;
     margin: 1.5rem;
 }
 
+
+/* Responsive */
 @media only screen and (max-width: 780px) {
     nav {
       display: none;
@@ -154,7 +161,7 @@ nav a:hover {
     }
 }
 
-
+/* Parallaxing */
 .parallax-home1 {
     min-height: 500px;
     background-attachment: fixed;
@@ -176,6 +183,25 @@ nav a:hover {
 }
  
 
+/* Footer */
 footer {
     background-color: #383838;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #A50321; 
 }
