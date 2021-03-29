@@ -10,6 +10,15 @@ body {
     margin: 0;
 }
 
+/* Custom Selection */
+p::selection {
+    background: #FF3333;
+    color: white;
+}
+h1::selection {
+    color: #A50321;
+}
+
 #container {
     display: grid;
     height: 100vh;
