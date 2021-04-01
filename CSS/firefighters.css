@@ -1,0 +1,83 @@
+.statistics-side {
+    float: left;
+    height: 50%;
+    background-color: #A50321;
+    width: 20%;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+    margin-bottom: 2.5vh;
+    margin-right: 0.5vw;
+}
+
+.workers-main {
+    float: left;
+    width: 78%;
+}
+
+.employee-container {
+    position: relative;
+    width: 23%;
+    float: left;
+    margin-top: 2.5vh;
+    margin-left: 0.75vw;
+    margin-bottom: 0.5vh;
+    margin-right: 0.75vw;
+}
+  
+.employee-image {
+    width: 100%;
+    height: 100%;
+}
+  
+.employee-name {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: white;
+}
+
+.employee-container:hover .employee-name {
+    opacity: 0.95;
+}
+  
+.name {
+    color: #A50321;
+    font-size: 2.5em;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.parallax-firefighters {
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url(../images/firefighters-background.png);
+}
+
+/* Responsive */
+@media only screen and (max-width: 780px) {
+    .statistics-side {
+        display: none;
+    }
+
+    .workers-main {
+        width: 100%;
+    }
+
+    .employee-container {
+        width: 48.5%;
+        margin-top: 1vh;
+    }
+}
