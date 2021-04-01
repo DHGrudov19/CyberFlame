@@ -40,6 +40,7 @@ nav {
     transition: top 0.4s;
     background-color: white;
     top: 0%;
+    z-index: 1;
 }
 
 nav a {
@@ -118,9 +119,9 @@ nav a:hover {
     height: 100vh;
     background-color: #FF3333;
     padding: 1.5em;
+    z-index: 1;
 
     transform: translateX(-100%);
-
     transition: transform 300ms ease-in-out;
 }
 

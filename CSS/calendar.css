@@ -1,5 +1,4 @@
 #calendar {
-    margin: 0;
     margin-top: 5vh;
     margin-bottom: 9vh;
     margin-left: 4vw;
@@ -36,6 +35,7 @@ li {
     text-align: center;
     list-style-type: none;
     font-size: 1.7em;
+    transition: 200ms ease;
 }
 
 li:nth-child(n+1):nth-child(-n+7) {
@@ -54,7 +54,7 @@ li:hover:nth-child(n+11):nth-child(-n+40) {
     color: #ecf0f1;
 }
 
-.parallax-home1 {
+.parallax-calendar {
     min-height: 300px;
     background-attachment: fixed;
     background-position: center;
