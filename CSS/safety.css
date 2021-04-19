@@ -27,6 +27,16 @@
 	transition: all 500ms;
 }
 
+.specific{
+    width:23.99%;
+    height: 50vh;
+    float: left;
+    margin-left:250px;
+    margin-right: 0.5vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
 .gallery img{
 	width: 100%;
 	height: 14rem;
@@ -44,6 +54,7 @@
 	opacity: 0.6;
 }
 
+
 .parallax-safety {
     min-height: 300px;
     background-attachment: fixed;
@@ -58,10 +69,19 @@
     .quarter{
         width: 48.9%;
     }
+    .specific{
+        width: 48.9%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .quarter{
+        overflow: hidden;
+        width: 98%;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .specific{
         overflow: hidden;
         width: 98%;
         margin-left: 1vw;
