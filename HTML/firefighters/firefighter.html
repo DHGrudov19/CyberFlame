@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../CSS/style.css">
     <link rel="stylesheet" href="../../CSS/firefighters.css">
     <script src="../../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500&display=swap" rel="stylesheet">
 </head>
@@ -57,7 +58,11 @@
             <!-- Statistics -->
             <div class="statistics-side">
 
-                <p>Some statistics</p>
+                <canvas id="DeathsChart" class="chart"></canvas>
+
+                <canvas id="InjuriesChart" class="chart"></canvas>
+
+                <canvas id="Services" class="chart"></canvas>
 
             </div>
 
@@ -284,7 +289,7 @@
 
                 <div id="page2" class="tab-page">
                     <div class="employee-container">
-                        <img src="../../images/employee-placeholder11.png" alt="John">
+                        <img src="../../images/employee-placeholder13.png" alt="John">
                         <h1>Ивайло Георгиев</h1>
                         <p class="rank">Инспектор</p>
                         <table>
@@ -302,7 +307,7 @@
                     </div>
 
                     <div class="employee-container">
-                        <img src="../../images/employee-placeholder7.png" alt="John">
+                        <img src="../../images/employee-placeholder14.png" alt="John">
                         <h1>Стефан Валентинов</h1>
                         <p class="rank">Младши Инспектор</p>
                         <table>
@@ -356,6 +361,7 @@
 </div>
 
 <script src="../../JS/multiplePages.js"></script>
+<script src="../../JS/statistics.js"></script>
 
 </body>
 
