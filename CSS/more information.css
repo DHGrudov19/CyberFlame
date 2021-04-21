@@ -1,0 +1,68 @@
+.half{
+    width:48.5%;
+    height: 50vh;
+    float: left;
+    margin-right: 0.7vw;
+    margin-left: 0.7vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    border: none;
+	background-color: #EAEAEA;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+	transition: all 500ms;
+}
+
+.content img{
+	width: 100%;
+	height: auto;
+    transition: 1s ease;
+}
+
+.content-text {
+    color: #A50321;
+    font-size: 3.5em;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 0.85;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.content:hover .overlay {
+    opacity: 0.9;
+}
+
+
+
+.parallax-more-information {
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url(../images/more\ information.png);
+}
