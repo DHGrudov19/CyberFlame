@@ -67,6 +67,37 @@ th::selection, td::selection {
     font-size: 1.3em;
 }
 
+/* Pagination */
+.pagination {
+    float: right;
+    margin: 2vh;
+}
+
+.pagination button {
+    color: black;
+    background-color: hsl(0, 0%, 85%);
+    float: left;
+    margin-right: 0.25vw;
+    padding: 0.75em 1.25em;
+    text-decoration: none;
+    border: none;
+    border-radius: 20%;
+    transition: background-color .3s;
+}
+
+.pagination button:hover:not(.active) {
+    background-color: hsl(0, 0%, 75%);
+}
+
+.pagination button.active {
+    background-color: #FF3333;
+    color: white;
+}
+
+.pagination button.active:hover {
+    background-color: #A50321;
+}
+
 
 .parallax-firefighters {
     min-height: 300px;
