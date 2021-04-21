@@ -1,0 +1,84 @@
+.telepone-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.telepone-contact li {
+    font-size: 1.6em;;
+}
+
+.telepone-contact p {
+    margin-top: 10vh;
+}
+
+.bottombar{
+	border-right: 1vh solid #A50321;
+    font-size: 2.3em;
+    padding-right: 2vw;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    text-align: center;
+}
+
+.call-112 {
+    font-size: 4em;
+    color: #A50321;
+    text-align: center;
+}
+
+.bold-112 {
+    font-weight: 800;
+}
+
+/* Form */
+.form-box {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 1.25em;
+}
+
+form {
+    width: 80%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 0.75em 0.75em 0.75em 0;
+    display: inline-block;
+    font-size: 1.25em;
+}
+
+input[type=submit] {
+    background-color: #FF3333;
+    color: white;
+    padding: 0.75em 1.25em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #db1b1b;
+}
+
+
+.parallax-firefighters {
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url(../images/firefighters-background.png);
+}

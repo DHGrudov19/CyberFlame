@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/cyberflame icon.ico">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <script src="../JS/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-header">
+        <div class="close-button" onclick="toggleMobileNav()">
+            <button>
+                <i class="fa fa-close"></i>
+            </button>
+        </div>
+    </div>
+
+    <a href="../index.html" class="">Начало</a>
+    <a href="safety.html" class="">Безопасност</a>
+    <a href="employees.html" class="">Служители</a>
+    <a href="calendar.html" class="">Календар</a>
+    <a href="" class="">Относно Нас</a>
+    <a href="" class="">Контакти</a>
+</div>
+
+<div id="container">
+    <header>
+        <img src="" alt="" class="logo">
+
+        <nav class="" id="navbar">
+            <a href="../index.html" class="">Начало</a>
+            <a href="safety.html" class="">Безопасност</a>
+            <a href="employees.html" class="">Служители</a>
+            <a href="calendar.html" class="">Календар</a>
+            <a href="" class="">Относно Нас</a>
+
+            <a href="" class="right nav-active">Контакти</a>
+        </nav>
+
+        <div class="menu-button" onclick="toggleMobileNav()">
+            <button>
+                <i class="fa fa-reorder"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="parallax-firefighters"></div>
+
+        <div><h1 class="call-112">ЗА СПЕШНИ ПОВИКВАНИЯ - <span class="bold-112">112</span>!</h1></div>
+        
+        <div class="telepone-contact">
+            <p><span class="bottombar"><i class="fa fa-phone"></i> Телефони за бърза помощ</span></p>
+            <ul>
+                <li>112 - Европейски хармонизиран номер за достъп до спешни повиквания</li>
+                <li>166 - Служба "Полиция"</li>
+                <li>160 - Служба "Пожарна безопасност и защита на населението"</li>
+                <li>150 - Служба "Спешна медицинска помощ"</li>
+                <li>*** - Служба "Пътна помощ"</li>
+            </ul>
+        </div>
+
+        <div class="form-box">
+            <form action="">
+                <label for="fname">Име</label>
+                <input type="text" id="fname" name="firstname" placeholder="Въведете вашето име">
+    
+                <label for="lname">Фамилия</label>
+                <input type="text" id="lname" name="lastname" placeholder="Въведете вашата фамилия">
+
+                <label for="country">Населено място</label>
+                <select id="country" name="country">
+                    <option value="">Бургас</option>
+                    <option value="">Айтос</option>
+                    <option value="">Царево</option>
+                </select>
+                
+                <label for="subject">Допълнително информация</label>
+                <textarea id="subject" name="subject" placeholder="Тук можете да добавите допълнително информация" style="height:200px"></textarea>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d288164.4012284659!2d27.19798123793951!3d42.518940658043796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a694b930803ba5%3A0x12fc5cfd72098d8!2z0KDQoSDQn9CR0JfQnSDQkdCj0KDQk9CQ0KE!5e0!3m2!1sbg!2sbg!4v1618568191587!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                
+                <input type="submit" value="Подай">
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <br>
+    </footer>
+</div>
+
+</body>
+
+</html>
