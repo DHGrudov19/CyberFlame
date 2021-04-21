@@ -1,3 +1,28 @@
+// A function to color the numbers
+function colorNumbers() {
+    let percent = document.querySelectorAll('.stats-numbers');
+
+    for (let elem of percent){
+
+        var pointNum = parseFloat(elem.innerHTML);
+
+        // If the numbers are higher than 0 then they'll be colored red and an arrow pointing up will be added
+        if (pointNum > 0)
+        {
+            elem.textContent += ' ↑';
+            elem.style.color = "red";
+        }
+        // Else the numbers will be colored green and an arrow pointing down will be added
+        else{
+            elem.textContent += ' ↓';
+            elem.style.color = "green";
+        }
+    }
+}
+
+// Calling the function
+colorNumbers();
+
 // The yers are written separately to shorten the code
 let years = [2015, 2016, 2017, 2018, 2019, 2020, 2021];
 
@@ -71,6 +96,30 @@ new Chart("Services", {
     },
     options: {
         legend: { display: false },
+        maintainAspectRatio: false,
+    }
+});
+
+// A chart for fires
+new Chart("Fires", {
+    type: "line",
+    data: {
+        labels: years,
+        datasets: [{ 
+            label: "Пожари",
+            data: [30009, 37362, 35482, 29448, 42141, 33693, 11874],
+            borderColor: "red",
+            fill: false
+        }, { 
+            label: "Тенденция",
+            data: [30009, 33685, 34583, 32015, 37078, 35385, 31429],
+            pointRadius: 0,
+            borderColor: "blue",
+            fill: false
+        }]
+    },
+    options: {
+        legend: {display: false},
         maintainAspectRatio: false,
     }
 });

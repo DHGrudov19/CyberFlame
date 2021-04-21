@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../images/cyberflame icon.ico">
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/statistics.css">
+    <script src="../../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-header">
+        <div class="close-button" onclick="toggleMobileNav()">
+            <button>
+                <i class="fa fa-close"></i>
+            </button>
+        </div>
+    </div>
+
+    <a href="../index.html" class="">Начало</a>
+    <a href="../safety.html" class="">Безопасност</a>
+    <a href="../employees.html" class="">Служители</a>
+    <a href="../calendar.html" class="">Календар</a>
+    <a href="" class="">Относно Нас</a>
+    <a href="../contact.html" class="">Контакти</a>
+</div>
+
+<div id="container">
+    <header>
+        <img src="" alt="" class="logo">
+
+        <nav class="" id="navbar">
+            <a href="../index.html" class="">Начало</a>
+            <a href="../safety.html" class="">Безопасност</a>
+            <a href="../employees.html" class="">Служители</a>
+            <a href="../calendar.html" class="">Календар</a>
+            <a href="../more information.html" class="nav-active">Още информация</a>
+
+            <a href="../contact.html" class="right">Контакти</a>
+        </nav>
+
+        <div class="menu-button" onclick="toggleMobileNav()">
+            <button>
+                <i class="fa fa-reorder"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="parallax-statistics"></div>
+
+        <div class="stats-box">
+
+            <h1 class="heading">Общи статистики</h1>
+
+            <div class="stats">
+                <div class="table-box">
+                    <table>
+                        <tr>
+                            <th>Пожари</th>
+                            <td>18 780</td>
+                            <td class="stats-numbers">+7.3%</td>
+                        </tr>
+        
+                        <tr>
+                            <th>Загинали при пожари</th>
+                            <td>38</td>
+                            <td class="stats-numbers">-6.8%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Пострадали при пожари</th>
+                            <td>86</td>
+                            <td class="stats-numbers">+4.4%</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="chart-tab1" class="chart-tab-box">
+                    <canvas id="Fires" class="side-stats"></canvas>
+                </div>
+    
+                <div id="chart-tab2" class="chart-tab-box">
+                    <canvas id="DeathsChart" class="side-stats"></canvas>
+                </div>
+
+                <div id="chart-tab3" class="chart-tab-box">
+                    <canvas id="InjuriesChart" class="side-stats"></canvas>
+                </div>
+                
+                
+            </div>
+
+            
+
+            <div class="stats">
+                <div class="chart-tabs">
+                    <button class="chart-tab active" onclick="multipleTabs('chart-tab1', this)" id="defaultOpen">Пожари</button>
+                    <button class="chart-tab" onclick="multipleTabs('chart-tab2', this)">Загинали</button>
+                    <button class="chart-tab" onclick="multipleTabs('chart-tab3', this)">Пострадали</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <br>
+    </footer>
+
+    <script src="../../JS/statistics.js"></script>
+    <script src="../../JS/multiplePages.js"></script>
+</div>
+
+</body>
+
+</html>
