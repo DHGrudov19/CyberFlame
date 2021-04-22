@@ -101,11 +101,17 @@
 
             
 
-            <div class="stats">
+            <div class="stats-tabs-box">
                 <div class="chart-tabs">
                     <button class="chart-tab active" onclick="multipleTabs('chart-tab1', this)" id="defaultOpen">Пожари</button>
                     <button class="chart-tab" onclick="multipleTabs('chart-tab2', this)">Загинали</button>
                     <button class="chart-tab" onclick="multipleTabs('chart-tab3', this)">Пострадали</button>
+                </div>
+            </div>
+
+            <div class="causes-chart-box">
+                <div>
+                    <canvas id="FireCauses" class="causes-chart"></canvas>
                 </div>
             </div>
 

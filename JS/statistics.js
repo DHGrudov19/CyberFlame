@@ -35,17 +35,8 @@ new Chart("DeathsChart", {
         datasets: [{
             label: "ЗАГИНАЛИ ПРИ ПОЖАРИ",
             data: [4, 5, 5, 12, 3, 7, 2],
-            backgroundColor: [
-                'rgba(255, 51, 51, 0.8)',
-                'rgba(31, 126, 49, 0.8)',
-                'rgba(76, 187, 187, 0.8)',
-                'rgba(168, 204, 53, 0.8)',
-                'rgba(204, 81, 179, 0.8)',
-                'rgba(52, 84, 173, 0.8)',
-                'rgba(175, 175, 175, 0.8)'
-            ],
+            backgroundColor: ['#FF3333', '#A50321'],
             borderColor: "red",
-            fill: false
         }]
     },
     options: {
@@ -56,12 +47,13 @@ new Chart("DeathsChart", {
 
 // A chart for injuries
 new Chart("InjuriesChart", {
-    type: "line",
+    type: "bar",
     data: {
         labels: years,
         datasets: [{
             label: "ПОСТРАДАЛИ ПРИ ПОЖАРИ",
             data: [23, 9, 12, 12, 12, 14, 4],
+            backgroundColor: ['hsla(35,100%,60%,0.9)', 'hsla(30,100%,43%,0.9)'],
             borderColor: "yellow",
             fill: false
         }]
@@ -121,5 +113,39 @@ new Chart("Fires", {
     options: {
         legend: {display: false},
         maintainAspectRatio: false,
+    }
+});
+
+
+let causes = ["Късо съединение", "Отоплителни уреди", "Нагревателни уреди", "Техническ неизправност", "Нарушена технология", "Строителна неизправност", "Окрит огън", "Природни явления", "Огневи работи", "Самозапалване", "Детска игра", "Некачествен ремонт", "В процес на установяване", "Умисъл", "Други"];
+
+// A chart for fire causes
+new Chart("FireCauses", {
+    type: "bar",
+    data: {
+        labels: causes,
+        datasets: [{ 
+            label: "Пожари",
+            data: [111, 13, 24, 56, 2, 2, 70, 2, 4, 15, 2, 1, 140, 11, 23],
+            backgroundColor: ['hsla(0,100%,60%,0.9)', 'hsla(348,96%,33%,0.9)'],
+            borderColor: "red",
+            fill: false
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: true,
+                text: 'Причини за възникване на пожари през 2020',
+                font: {
+                    size: 24
+                }
+            }
+        }
     }
 });
