@@ -200,6 +200,67 @@ nav a:hover {
 /* Footer */
 footer {
     background-color: #383838;
+    color: white;
+    text-align: center;
+}
+
+footer div {
+    width: 29%;
+    float: left;
+}
+
+footer div:first-child {
+    margin-left: 2%;
+}
+
+footer div:last-child {
+    margin-right: 2%;
+}
+
+footer img {
+    height: 40vh;
+    margin: 2.5em;
+}
+
+footer p {
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+footer p:first-child {
+    margin-top: 20%;
+}
+
+footer ul {
+    padding: 0%;
+    margin-top: 3vh;
+}
+
+footer li {
+    display: inline;
+    padding: 0.25em 0.5em;
+    font-size: 2.25em;
+    background-color: #FF3333;
+    transition: background-color .3s;
+    border-radius: 15%;
+}
+
+footer li:hover {
+    background-color: #A50321;
+}
+
+.phone-number {
+    display: inline;
+    font-size: 1.3em;
+}
+
+.phone-number:nth-child(n+1) {
+    margin-right: 1.5vw;
+}
+
+.phone-number:nth-child(n+2) {
+    margin-left: 1.5vw;
 }
 
 
