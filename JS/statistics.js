@@ -99,12 +99,12 @@ new Chart("Fires", {
         labels: years,
         datasets: [{ 
             label: "Пожари",
-            data: [30009, 37362, 35482, 29448, 42141, 33693, 11874],
+            data: [2012, 2309, 2204, 1603, 1889, 1844, 917],
             borderColor: "red",
             fill: false
         }, { 
             label: "Тенденция",
-            data: [30009, 33685, 34583, 32015, 37078, 35385, 31429],
+            data: [1900, 1850, 1800, 1750, 1700, 1650],
             pointRadius: 0,
             borderColor: "blue",
             fill: false
