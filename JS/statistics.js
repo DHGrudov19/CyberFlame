@@ -149,3 +149,40 @@ new Chart("FireCauses", {
         }
     }
 });
+
+// A chart for traffic accidents
+new Chart("TraffiAccidents", {
+    type: "bar",
+    data: {
+        labels: [2019, 2020],
+        datasets: [{ 
+            label: "ПТП",
+            data: [436, 367],
+            backgroundColor: ['hsla(210,29%,24%,0.9)'],
+            borderColor: "red",
+            fill: false
+        }, { 
+            label: "Загинали при ПТП",
+            data: [29, 26],
+            backgroundColor: ['hsla(199,85%,38%,0.9)'],
+            pointRadius: 0,
+            borderColor: "blue",
+            fill: false
+        }, { 
+            label: "Пострадали при ПТП",
+            data: [551, 432],
+            backgroundColor: ['hsla(32,68%,66%,0.9)'],
+            pointRadius: 0,
+            borderColor: "blue",
+            fill: false
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false
+            },
+        },
+        maintainAspectRatio: false,
+    }
+});
