@@ -164,7 +164,7 @@ new Chart("TraffiAccidents", {
         }, { 
             label: "Загинали при ПТП",
             data: [29, 26],
-            backgroundColor: ['hsla(199,85%,38%,0.9)'],
+            backgroundColor: ['hsla(191,47%,45%,0.9)'],
             pointRadius: 0,
             borderColor: "blue",
             fill: false
@@ -182,6 +182,68 @@ new Chart("TraffiAccidents", {
             legend: {
                 display: false
             },
+        },
+        maintainAspectRatio: false,
+    }
+});
+
+// A chart for deaths caused by traffic accidents
+new Chart("DeathsTrafficAccidents", {
+    type: "pie",
+    data: {
+        labels: ["Водач", "Пешеходец", "Пътник", "Работник на пътя"],
+        datasets: [{ 
+            label: "ПТП",
+            data: [12, 7, 7, 0],
+            backgroundColor: ['hsla(210,29%,24%)', 'hsla(191,47%,45%)', 'hsla(32,68%,66%)', 'hsla(91,47%,45%)'],
+            borderColor: "white",
+            fill: false
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: true,
+                position:'bottom'
+            },
+            title: {
+                display: true,
+                text: 'Загиналите в ПТП през 2020',
+                font: {
+                    size: 24
+                }
+            }
+        },
+        maintainAspectRatio: false,
+    }
+});
+
+// A chart for injuries caused by traffic accidents
+new Chart("InjuriesTrafficAccidents", {
+    type: "pie",
+    data: {
+        labels: ["Водач", "Пешеходец", "Пътник", "Работник на пътя"],
+        datasets: [{ 
+            label: "ПТП",
+            data: [201, 96, 135, 0],
+            backgroundColor: ['hsla(210,29%,24%)', 'hsla(191,47%,45%)', 'hsla(32,68%,66%)', 'hsla(91,47%,45%)'],
+            borderColor: "white",
+            fill: false
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: true,
+                position: 'bottom'
+            },
+            title: {
+                display: true,
+                text: 'Ранени в ПТП през 2020',
+                font: {
+                    size: 24
+                }
+            }
         },
         maintainAspectRatio: false,
     }
