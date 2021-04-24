@@ -73,10 +73,16 @@
         <div class="form-box">
             <form action="">
                 <label for="fname">Име</label>
-                <input type="text" id="fname" name="firstname" placeholder="Въведете вашето име">
+                <input type="text" id="fname" name="firstname" placeholder="Въведете вашето име" required>
     
                 <label for="lname">Фамилия</label>
-                <input type="text" id="lname" name="lastname" placeholder="Въведете вашата фамилия">
+                <input type="text" id="lname" name="lastname" placeholder="Въведете вашата фамилия" required>
+
+                <label for="phone">Телефонен номер</label>
+                <input type="tel" id="phone" name="phone" placeholder="Въведете телефонен номер за обратна връзка" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="country">Населено място</label>
                 <select id="country" name="country">
@@ -86,7 +92,7 @@
                 </select>
                 
                 <label for="subject">Допълнително информация</label>
-                <textarea id="subject" name="subject" placeholder="Тук можете да добавите допълнително информация" style="height:200px"></textarea>
+                <textarea id="subject" name="subject" placeholder="Тук можете да добавите допълнително информация" required></textarea>
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d288164.4012284659!2d27.19798123793951!3d42.518940658043796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a694b930803ba5%3A0x12fc5cfd72098d8!2z0KDQoSDQn9CR0JfQnSDQkdCj0KDQk9CQ0KE!5e0!3m2!1sbg!2sbg!4v1618568191587!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 

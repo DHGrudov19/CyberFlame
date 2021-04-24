@@ -57,18 +57,18 @@ form iframe {
     margin-right: 1%;
 }
 
-input[type=text], select, textarea {
+label {
+    padding: 0.75em 0.75em 0.75em 0;
+    display: inline-block;
+    font-size: 1.25em;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
     width: 100%;
     padding: 0.75em;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-}
-
-label {
-    padding: 0.75em 0.75em 0.75em 0;
-    display: inline-block;
-    font-size: 1.25em;
 }
 
 input[type=submit] {
@@ -84,6 +84,10 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #db1b1b;
+}
+
+textarea {
+    height: 60vh;
 }
 
 
