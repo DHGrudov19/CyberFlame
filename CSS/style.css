@@ -205,16 +205,8 @@ footer {
 }
 
 footer div {
-    width: 29%;
+    width: 33%;
     float: left;
-}
-
-footer div:first-child {
-    margin-left: 2%;
-}
-
-footer div:last-child {
-    margin-right: 2%;
 }
 
 footer img {
