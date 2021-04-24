@@ -159,22 +159,6 @@ nav a:hover {
     margin: 1.5rem;
 }
 
-
-/* Responsive */
-@media only screen and (max-width: 780px) {
-    nav {
-      display: none;
-    }
-
-    .mobile-nav {
-        display: block;
-    }
-
-    .menu-button{
-        display: block;
-    }
-}
-
 /* Parallaxing */
 .parallax-home1 {
     min-height: 500px;
@@ -271,4 +255,28 @@ footer li:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #A50321; 
+}
+
+/* Responsive */
+@media only screen and (max-width: 845px) {
+    nav {
+      display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    footer div {
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    footer img {
+        height: 30vh;
+    }
 }
