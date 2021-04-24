@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../images/cyberflame icon.ico">
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/firefighters.css">
+    <script src="../../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-header">
+        <div class="close-button" onclick="toggleMobileNav()">
+            <button>
+                <i class="fa fa-close"></i>
+            </button>
+        </div>
+    </div>
+
+    <a href="../../index.html" class="">Начало</a>
+    <a href="../safety.html" class="">Безопасност</a>
+    <a href="../employees.html" class="">Служители</a>
+    <a href="../calendar.html" class="">Календар</a>
+    <a href="../more information.html" class="">Още информация</a>
+    <a href="../contact.html" class="">Контакти</a>
+</div>
+
+<div id="container">
+    <header>
+        <nav class="" id="navbar">
+            <a href="../../index.html" class="">Начало</a>
+            <a href="../safety.html" class="">Безопасност</a>
+            <a href="../employees.html" class="nav-active">Служители</a>
+            <a href="../calendar.html" class="">Календар</a>
+            <a href="../more information.html" class="">Още информация</a>
+
+            <a href="../contact.html" class="right">Контакти</a>
+        </nav>
+
+        <div class="menu-button" onclick="toggleMobileNav()">
+            <button>
+                <i class="fa fa-reorder"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="parallax-firefighters"></div>
+
+            <!-- Statistics -->
+            <div class="statistics-side">
+
+                <canvas id="DeathsChart" class="chart"></canvas>
+
+                <canvas id="InjuriesChart" class="chart"></canvas>
+
+                <canvas id="Services" class="chart"></canvas>
+
+            </div>
+
+            <!-- Workers side -->
+            <div class="workers-main">
+
+                <div id="page1" class="tab-page">
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder3.png" alt="Ivana">
+                        <h1>Георги Григоров</h1>
+                        <p class="rank">Лекар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>150</td>
+                                <td>114</td>
+                                <td>6921</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder7.png" alt="Adrian">
+                        <h1>Николай Димитров</h1>
+                        <p class="rank">Парамедик</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>625</td>
+                                <td>400</td>
+                                <td>9112</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder5.png" alt="John">
+                        <h1>Габриела Борисова</h1>
+                        <p class="rank">Асистент лекар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>376</td>
+                                <td>234</td>
+                                <td>5111</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder9.png" alt="John">
+                        <h1>Борислав Жеков</h1>
+                        <p class="rank">Лекар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>297</td>
+                                <td>275</td>
+                                <td>12814</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder14.png" alt="John">
+                        <h1>Божидара Кирова</h1>
+                        <p class="rank">Доктор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>311</td>
+                                <td>274</td>
+                                <td>9536</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder3.png" alt="John">
+                        <h1>Стефан Христов</h1>
+                        <p class="rank">Лекар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>402</td>
+                                <td>401</td>
+                                <td>13438</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder12.png" alt="John">
+                        <h1>Симеон Митев</h1>
+                        <p class="rank">Доктор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>240</td>
+                                <td>129</td>
+                                <td>3454</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder6.png" alt="John">
+                        <h1>Даниел Йорданов</h1>
+                        <p class="rank">Парамедик</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>413</td>
+                                <td>312</td>
+                                <td>4764</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder5.png" alt="John">
+                        <h1>Кристина Банева</h1>
+                        <p class="rank">Асистент лекар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>806</td>
+                                <td>708</td>
+                                <td>754</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder13.png" alt="John">
+                        <h1>Християн Савов</h1>
+                        <p class="rank">Доктор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>760</td>
+                                <td>621</td>
+                                <td>1362</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder8.png" alt="John">
+                        <h1>Никола Пашев</h1>
+                        <p class="rank">Лекар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>584</td>
+                                <td>489</td>
+                                <td>9137</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder2.png" alt="John">
+                        <h1>Марио Баев</h1>
+                        <p class="rank">Парамедик</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>107</td>
+                                <td>95</td>
+                                <td>6363</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="page2" class="tab-page">
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder6.png" alt="John">
+                        <h1>Станислав Андреев</h1>
+                        <p class="rank">Доктор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>179</td>
+                                <td>152</td>
+                                <td>2137</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder4.png" alt="Kristian">
+                        <h1>Теодор Дончев</h1>
+                        <p class="rank">Лекар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>160</td>
+                                <td>97</td>
+                                <td>3156</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder10.png" alt="John">
+                        <h1>Никол Дачева</h1>
+                        <p class="rank">Доктор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>396</td>
+                                <td>290</td>
+                                <td>1768</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="pagination">
+                <button class="pageButton active" onclick="multiplePages('page1', this)" id="defaultOpen">1</button>
+                <button class="pageButton" onclick="multiplePages('page2', this)">2</button>
+                
+            </div>
+
+    </main>
+
+    <footer>
+        <br>
+    </footer>
+</div>
+
+<script src="../../JS/multiplePages.js"></script>
+<script src="../../JS/statistics.js"></script>
+
+</body>
+
+</html>
