@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../images/cyberflame icon.ico">
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/firefighters.css">
+    <script src="../../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-header">
+        <div class="close-button" onclick="toggleMobileNav()">
+            <button>
+                <i class="fa fa-close"></i>
+            </button>
+        </div>
+    </div>
+
+    <a href="../../index.html" class="">Начало</a>
+    <a href="../safety.html" class="">Безопасност</a>
+    <a href="../employees.html" class="">Служители</a>
+    <a href="../calendar.html" class="">Календар</a>
+    <a href="../more information.html" class="">Още информация</a>
+    <a href="../contact.html" class="">Контакти</a>
+</div>
+
+<div id="container">
+    <header>
+        <nav class="" id="navbar">
+            <a href="../../index.html" class="">Начало</a>
+            <a href="../safety.html" class="">Безопасност</a>
+            <a href="../employees.html" class="nav-active">Служители</a>
+            <a href="../calendar.html" class="">Календар</a>
+            <a href="../more information.html" class="">Още информация</a>
+
+            <a href="../contact.html" class="right">Контакти</a>
+        </nav>
+
+        <div class="menu-button" onclick="toggleMobileNav()">
+            <button>
+                <i class="fa fa-reorder"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="parallax-firefighters"></div>
+
+            <!-- Statistics -->
+            <div class="statistics-side">
+
+                <canvas id="DeathsChart" class="chart"></canvas>
+
+                <canvas id="InjuriesChart" class="chart"></canvas>
+
+                <canvas id="Services" class="chart"></canvas>
+
+            </div>
+
+            <!-- Workers side -->
+            <div class="workers-main">
+
+                <div id="page1" class="tab-page">
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder10.png" alt="John">
+                        <h1>Иван Тошев</h1>
+                        <p class="rank">Главен Инспектор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>308</td>
+                                <td>167</td>
+                                <td>7678</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder9.png" alt="John">
+                        <h1>Николай Димитров</h1>
+                        <p class="rank">Старши Инспектор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>501</td>
+                                <td>298</td>
+                                <td>9832</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder.png" alt="John">
+                        <h1>Георги Николаев</h1>
+                        <p class="rank">Инспектор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>211</td>
+                                <td>134</td>
+                                <td>5426</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder7.png" alt="John">
+                        <h1>Румен Петров</h1>
+                        <p class="rank">Комисар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>345</td>
+                                <td>213</td>
+                                <td>7684</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder4.png" alt="John">
+                        <h1>Емилия Спасова</h1>
+                        <p class="rank">Комисар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>321</td>
+                                <td>234</td>
+                                <td>8736</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder6.png" alt="John">
+                        <h1>Кирил Стоянов</h1>
+                        <p class="rank">Главен Комисар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>344</td>
+                                <td>129</td>
+                                <td>10438</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder11.png" alt="John">
+                        <h1>Стефан Валентинов</h1>
+                        <p class="rank">Младши Инспектор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>189</td>
+                                <td>73</td>
+                                <td>3456</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder14.png" alt="John">
+                        <h1>Константин Симеонов</h1>
+                        <p class="rank">Инспектор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>432</td>
+                                <td>312</td>
+                                <td>13764</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder8.png" alt="John">
+                        <h1>Йордан Христов</h1>
+                        <p class="rank">Инспектор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>324</td>
+                                <td>154</td>
+                                <td>7564</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder4.png" alt="John">
+                        <h1>Гергана Тодорова</h1>
+                        <p class="rank">Комисар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>523</td>
+                                <td>498</td>
+                                <td>13652</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder11.png" alt="John">
+                        <h1>Ивайло Георгиев</h1>
+                        <p class="rank">Инспектор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>245</td>
+                                <td>176</td>
+                                <td>5637</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder12.png" alt="John">
+                        <h1>Пламен Ангелов</h1>
+                        <p class="rank">Комисар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>310</td>
+                                <td>234</td>
+                                <td>7363</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="page2" class="tab-page">
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder2.png" alt="John">
+                        <h1>Ивайло Георгиев</h1>
+                        <p class="rank">Инспектор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>245</td>
+                                <td>176</td>
+                                <td>5637</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder13.png" alt="John">
+                        <h1>Стефан Валентинов</h1>
+                        <p class="rank">Младши Инспектор</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>189</td>
+                                <td>73</td>
+                                <td>3456</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="employee-container">
+                        <img src="../../images/employee-placeholder10.png" alt="John">
+                        <h1>Румен Петров</h1>
+                        <p class="rank">Комисар</p>
+                        <table>
+                            <tr>
+                                <th>Служби</th>
+                                <th>От които пожари</th>
+                                <th>Часове служби</th>
+                            </tr>
+                            <tr>
+                                <td>345</td>
+                                <td>213</td>
+                                <td>7684</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="pagination">
+                <button class="pageButton active" onclick="multiplePages('page1', this)" id="defaultOpen">1</button>
+                <button class="pageButton" onclick="multiplePages('page2', this)">2</button>
+                <button class="pageButton" onclick="multiplePages('page3', this)">3</button>
+                <button class="pageButton" onclick="multiplePages('page4', this)">4</button>
+                <button class="pageButton" onclick="multiplePages('page5', this)">5</button>
+            </div>
+
+    </main>
+
+    <footer>
+        <br>
+    </footer>
+</div>
+
+<script src="../../JS/multiplePages.js"></script>
+<script src="../../JS/statistics.js"></script>
+
+</body>
+
+</html>
