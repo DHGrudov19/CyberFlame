@@ -11,7 +11,7 @@ body {
 }
 
 /* Custom Selection */
-p::selection {
+p::selection, li::selection, td::selection, th::selection, button::selection, label::selection, span::selection, img::selection {
     background: #FF3333;
     color: white;
 }
