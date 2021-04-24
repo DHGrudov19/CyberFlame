@@ -50,6 +50,13 @@ form {
     width: 80%;
 }
 
+form iframe {
+    width: 98%;
+    margin-top: 1.5vh;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 0.75em;
@@ -67,6 +74,7 @@ label {
 input[type=submit] {
     background-color: #FF3333;
     color: white;
+    font-size: 1.25em;
     padding: 0.75em 1.25em;
     border: none;
     border-radius: 0.5em;
