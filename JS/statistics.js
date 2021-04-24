@@ -208,7 +208,7 @@ new Chart("DeathsTrafficAccidents", {
             },
             title: {
                 display: true,
-                text: 'Загиналите в ПТП през 2020',
+                text: 'Загинали в ПТП през 2020',
                 font: {
                     size: 24
                 }
@@ -240,6 +240,37 @@ new Chart("InjuriesTrafficAccidents", {
             title: {
                 display: true,
                 text: 'Ранени в ПТП през 2020',
+                font: {
+                    size: 24
+                }
+            }
+        },
+        maintainAspectRatio: false,
+    }
+});
+
+// A chart for causes of traffic accidents
+new Chart("CausesTrafficAccidents", {
+    type: "pie",
+    data: {
+        labels: ["Нарушение на водач", "Нарушение на пешеходец", "Пътни условия ", "Техническа неизправност на ППС", "Нарушение на пътник ", "Друга причина"],
+        datasets: [{ 
+            label: "ПТП",
+            data: [5562, 43, 12, 6, 3, 84],
+            backgroundColor: ['hsla(210,29%,24%)', 'hsla(191,47%,45%)', 'hsla(32,68%,66%)', 'hsla(91,47%,45%)', 'hsla(0,46%,44%)', 'hsla(163,35%,37%)'],
+            borderColor: "white",
+            fill: false
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: true,
+                position: 'bottom'
+            },
+            title: {
+                display: true,
+                text: 'Причини за ПТП през 2020 г. за цялата страна',
                 font: {
                     size: 24
                 }
