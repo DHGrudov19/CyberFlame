@@ -35,6 +35,11 @@
     font-size: 1.3em;
 }
 
+.availability {
+    color: gray;
+    font-weight: 500;
+}
+
 
 .parallax-equipment {
     min-height: 300px;
