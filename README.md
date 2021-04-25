@@ -1,6 +1,6 @@
 # CyberFlame
 
-<img src="images/cyberflame team.png" width="300px">
+<img src="images/cyberflame team.png" width="310px">
 
 ---
 
@@ -26,8 +26,8 @@
 
 ## About <a name = "about"></a>
 <br>
-Hallo we are team CyberFlame and our project is set on the topic Fire Department! <br><br>
-We have prepared a site which includes information and explanation how to prevent most of the disasters that can cause fire. Also we have made diferent kind of statistics for the employees, the different cases of service and the equipment.<br><br>
+Hello we are team CyberFlame and our project is set on the topic Fire Department! <br><br>
+We have prepared a site which includes information and explanation how to prevent most of the disasters that can cause fire. Also we have made different kind of statistics for the employees, the cases of service and the equipment.<br><br>
 You can signal and report for a fire in one of our tab in the site.
 
 ## Installation <a name = "installation"></a>
