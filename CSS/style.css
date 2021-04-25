@@ -11,7 +11,7 @@ body {
 }
 
 /* Custom Selection */
-p::selection {
+p::selection, li::selection, td::selection, th::selection, button::selection, label::selection, span::selection, img::selection {
     background: #FF3333;
     color: white;
 }
@@ -159,22 +159,6 @@ nav a:hover {
     margin: 1.5rem;
 }
 
-
-/* Responsive */
-@media only screen and (max-width: 780px) {
-    nav {
-      display: none;
-    }
-
-    .mobile-nav {
-        display: block;
-    }
-
-    .menu-button{
-        display: block;
-    }
-}
-
 /* Parallaxing */
 .parallax-home1 {
     min-height: 500px;
@@ -205,16 +189,8 @@ footer {
 }
 
 footer div {
-    width: 29%;
+    width: 33%;
     float: left;
-}
-
-footer div:first-child {
-    margin-left: 2%;
-}
-
-footer div:last-child {
-    margin-right: 2%;
 }
 
 footer img {
@@ -279,4 +255,28 @@ footer li:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #A50321; 
+}
+
+/* Responsive */
+@media only screen and (max-width: 845px) {
+    nav {
+      display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    footer div {
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    footer img {
+        height: 30vh;
+    }
 }
