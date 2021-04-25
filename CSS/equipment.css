@@ -1,0 +1,47 @@
+/* Equopment container */
+.equipment-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 32%;
+    text-align: center;
+    float: left;
+    margin-left: 1%;
+    margin-bottom: 1vh;
+  }
+
+.equipment-container h1 {
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.equipment-container img {
+    width:98%;
+    height: 40vh;
+    margin-top: 1.5vh;
+}
+
+.equipment-container table {
+    width: 100%;
+}
+
+.equipment-container th {
+    width: 33%;
+    font-weight: bold;
+}
+  
+.model {
+    color: hsl(0, 0%, 30%);
+    font-size: 1.3em;
+}
+
+
+.parallax-equipment {
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url(../images/equipment.png);
+}
