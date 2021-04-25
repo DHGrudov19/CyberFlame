@@ -151,14 +151,6 @@ nav a:hover {
     color: white;
 }
 
-
-/* Body */
-.main-content {
-    height:1000px;
-    font-size:36px;
-    margin: 1.5rem;
-}
-
 /* Parallaxing */
 .parallax-home1 {
     min-height: 500px;
