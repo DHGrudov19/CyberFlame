@@ -1,6 +1,6 @@
 # CyberFlame
 
-<img src="images/cyberflame team.png" width="250px">
+<img src="images/cyberflame team.png" width="300px">
 
 ---
 
@@ -26,8 +26,8 @@
 
 ## About <a name = "about"></a>
 <br>
-Hallo we are team CyberFlame and our project is set on the topic Fire Department. <br>
-We have prepared a site which includes information and explanation how to prevent most of the disasters that can cause fire. Also we have made diferent kind of statistics for the employees, the different cases of service and the equipment.
+Hallo we are team CyberFlame and our project is set on the topic Fire Department! <br><br>
+We have prepared a site which includes information and explanation how to prevent most of the disasters that can cause fire. Also we have made diferent kind of statistics for the employees, the different cases of service and the equipment.<br><br>
 You can signal and report for a fire in one of our tab in the site.
 
 ## Installation <a name = "installation"></a>
@@ -41,4 +41,4 @@ Paste this line of code in cmd:
 git clone https://github.com/DHGrudov19/CyberFlame.git
 ````
 
-##If you support our project, you can always share it on social media. Pull requests are welcome.
+## If you support our project, you can always share it on social media. Pull requests are welcome!
