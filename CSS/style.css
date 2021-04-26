@@ -91,6 +91,10 @@ nav a.right {
     padding: 1.3vw 2vw 3vh 2vw;
 }
 
+nav a.right-active {
+    color: #383838;
+}
+
 .nav-active {
     color: #383838;
 }
