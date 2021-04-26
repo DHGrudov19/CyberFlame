@@ -1,4 +1,4 @@
-/* Equopment container */
+/* Equipment container */
 .equipment-container {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 32%;
@@ -6,7 +6,7 @@
     float: left;
     margin-left: 1%;
     margin-bottom: 1vh;
-  }
+}
 
 .equipment-container h1 {
     font-size: 2em;
