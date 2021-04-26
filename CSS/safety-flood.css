@@ -1,0 +1,101 @@
+.parallax-flood {
+    position: relative;
+    height: 40vh;
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/safetyFlood3.jpg);
+    
+}
+.centeredText {
+    font-family: 'Noto Sans JP', sans-serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: white;
+}
+.whatIsFlood {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10vh;
+    margin-left:20px;
+}
+.whatIsFloodText {
+    margin-top: -10vh;
+    margin-left: 7vh;
+    font-size: 18px;
+}
+.reasons {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10vh;
+    margin-left:20px;
+}
+.reasonsList {
+    margin-top: -10vh;
+    font-size: 18px;
+}
+.howToPrepare {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10vh;
+    margin-left:20px;
+}
+.howToPrepareList {
+    margin-top: -10vh;
+    font-size: 18px;
+}
+.howToUnderstand {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10vh;
+    margin-left:20px;
+}
+.howToUnderstandList {
+    margin-top: -10vh;
+    font-size: 18px;
+}
+.whatToDoIndoor {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10vh;
+    margin-left:20px;
+}
+.whatToDoIndoorList {
+    margin-top: -10vh;
+    font-size: 18px;
+}
+.whatToDoOutdoor {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10vh;
+    margin-left:20px;
+}
+.whatToDoOutdoorList {
+    margin-top: -10vh;
+    font-size: 18px;
+}
+.whatToDoAfter {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10vh;
+    margin-left:20px;
+}
+.whatToDoAfterList{
+    margin-top: -10vh;
+    font-size: 18px;
+}
+.whatToDoToLimit {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10vh;
+    margin-left:20px;
+}
+.whatToDoToLimitList{
+    margin-top: -10vh;
+    font-size: 18px;
+}
