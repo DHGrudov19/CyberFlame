@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/home.css">
     <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500&display=swap" rel="stylesheet">
 </head>
@@ -34,8 +35,6 @@
 
 <div id="container">
     <header>
-        <img src="" alt="" class="logo">
-
         <nav class="" id="navbar">
             <a href="" class="nav-active">Начало</a>
             <a href="HTML/safety.html" class="">Безопасност</a>
@@ -83,11 +82,20 @@
                     </div>
                 </a>
             </div>
-            <div id = "summaryStatistic">
-                <h1 class="heading2">Кратко изложение на спасените по време на служба:</h1><br><br>
-                <a href="HTML/firefighters/firefighter.html"><h2>Пожарникари</h2></a><br>
-                <a href="HTML/medics/medics.html"><h2>Медици</h2></a><br>
-                <a href="HTML/roadside assistance/roadside assistance.html"><h2>Пътна помощ</h2></a><br>
+
+            <h1 class="heading2">Кратко изложение на спасените по време на служба:</h1>
+
+            <div class="summary-statistic">
+                <div class="half-summary-statistic-links">
+                    <a href="HTML/firefighters/firefighter.html">Пожарникари</a>
+                    <a href="HTML/medics/medics.html">Медици</a>
+                    <a href="HTML/roadside assistance/roadside assistance.html">Пътна помощ</a>
+                </div>
+
+                <div class="half-summary-statistic-chart">
+                    <canvas id="SavedLives" class="summary-statistic-pie-chart"></canvas>
+                </div>
+                
             </div>
 
             <div class="parallax-home2"></div>
@@ -121,6 +129,8 @@
         </div>
     </footer>
 </div>
+
+<script src="JS/statistics-home.js"></script>
 
 </body>
 

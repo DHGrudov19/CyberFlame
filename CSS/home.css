@@ -17,23 +17,11 @@
     letter-spacing: 0.25vw;
     font-size: 2.25em;
     font-weight: 500;
-    background-color: grey;
-}
-
-h2{
-    margin-left: 10%;
-    color: white;
-    letter-spacing: 0.25vw;
-    font-size: 2.25em;
-    font-weight: 500;
-}
-
-a:link{
-    text-decoration: none;
+    background-color: #383838;
 }
 
 .cards-box {
-    height: 60vh;
+    height: 70vh;
 }
 
 .card-container {
@@ -52,14 +40,46 @@ a:link{
     text-overflow: ellipsis;
 }
 
+.card-container p {
+    font-size: 1.35em;
+}
+
 .card-container img {
     width:98%;
     height: 33vh;
     margin-top: 1.5vh;
 }
 
-#summaryStatistic{
+.summary-statistic{
     width:100%;
-    height:100%;
-    background-color: grey;
+    height: 70vh;
+    background-color: white;
+}
+
+.half-summary-statistic-links {
+    width: 40%;
+    float: left;
+    height: 60vh;
+    margin-top: 5vh;
+    margin-left: 10%;
+}
+
+.half-summary-statistic-chart {
+    width: 40%;
+    float: left;
+    height: 60vh;
+    margin-top: 5vh;
+    margin-right: 10%;
+}
+
+
+.summary-statistic a {
+    margin-top: 3vh;
+    margin-bottom: 20%;
+    display: block;
+    color: black;
+    letter-spacing: 0.25vw;
+    font-size: 2.25em;
+    font-weight: 500;
+    text-decoration: none;
 }
