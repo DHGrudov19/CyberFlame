@@ -1,0 +1,102 @@
+/* Headings */
+h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    position: absolute;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    text-shadow: 0.05em 0.05em black;
+    color: white;
+}
+
+.text-box h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 7vh;
+}
+
+.text-box h3 {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+    margin: 7vh;
+}
+
+h6 {
+    margin-top: 0%;
+    padding: 0.25em;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.25vw;
+    font-size: 2.25em;
+    font-weight: 500;
+    background-color: #383838;
+}
+
+/* Paragraphs */
+.text-box p {
+    margin-left: 7vh;
+    font-size: 1.5em;
+}
+
+/* Lists */
+.text-box ul {
+    font-size: 1.5em;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.text-box ol {
+    font-size: 1.5em;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+/* Parallaxing */
+.parallax-earthquake {
+    position: relative;
+    height: 40vh;
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/safetyEarthquake1.jpg);  
+}
+
+.parallax-flood {
+    position: relative;
+    height: 40vh;
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/safetyFlood3.jpg);
+}
+
+.parallax-forestFire {
+    position: relative;
+    height: 40vh;
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/safetyForestFire.jpg);
+}
+
+.parallax-homefire {
+    position: relative;
+    height: 40vh;
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/safetyHomeFire4.jpg);
+}
