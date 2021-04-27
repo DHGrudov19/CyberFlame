@@ -18,6 +18,11 @@
     font-size: 2.25em;
     font-weight: 500;
     background-color: #383838;
+    overflow: hidden;
+}
+
+.content-container {
+    height: auto;
 }
 
 .cards-box {
@@ -72,7 +77,6 @@
     margin-right: 10%;
 }
 
-
 .summary-statistic a {
     margin-top: 3vh;
     margin-bottom: 20%;
@@ -82,4 +86,26 @@
     font-size: 2.25em;
     font-weight: 500;
     text-decoration: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 845px) {
+    .card-container {
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .half-summary-statistic-links {
+        width: 100%;
+        text-align: center;
+        margin: 0%;
+    }
+
+    .half-summary-statistic-chart {
+        width: 100%;
+        background-color: white;
+        margin-right: 0%;
+        margin-top: 5vh;
+    }
 }

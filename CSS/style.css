@@ -274,5 +274,10 @@ footer li:hover {
 
     footer img {
         height: 30vh;
+        margin: 0.25em;
+    }
+
+    footer p:first-child {
+        margin-top: 5%;
     }
 }
