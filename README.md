@@ -1,6 +1,6 @@
 # CyberFlame
 
-<img src="images/cyberflame team.png" width="310px">
+<img src="images/logo/cyberflame team.png" width="310px">
 
 ---
 
