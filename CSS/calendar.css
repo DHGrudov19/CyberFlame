@@ -66,5 +66,5 @@ li:hover:nth-child(n+11):nth-child(-n+40) {
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-image: url(../images/calendar.png);
+    background-image: url(../images/styling/calendar.png);
 }
