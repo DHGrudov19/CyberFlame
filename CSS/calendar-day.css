@@ -4,6 +4,7 @@ th::selection, td::selection {
     color: white;
 }
 
+/* Headings */
 .heading1 {
     margin-top: 0%;
     padding: 0.5em 1em;
@@ -13,6 +14,7 @@ th::selection, td::selection {
     font-size: 2.25em;
     font-weight: 500;
     background-color: #383838;
+    overflow: hidden;
 }
 
 .headings2{
@@ -24,119 +26,38 @@ th::selection, td::selection {
     font-weight: 450;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-/* Employees */
-.employees-on-duty {
-    height: 260vh;
-}
-
-.equipment-on-use {
-    height: 100%;
-    margin-bottom: 10vh;
-}
-
-.workers-header {
-    float: left;
+/* Employee boxes */
+.names-box {
+    border: 0.25em solid hsla(349, 96%, 33%, 0.9);
+    border-radius: 0.5em;
+    background-color: hsl(352, 100%, 97%);
     width: 80%;
-    font-size: 3em;
-    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5vh;
 }
 
-.workers-main {
-    float: left;
-    margin-left:20.50vh;
-    width:80%;
+.names-box-content {
+    margin: 1em;
 }
 
-.employee-container {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 30%;
-    text-align: center;
-    float: left;
-    margin-left: 1.40vw;
-    margin-bottom: 1vh;
-  }
-
-.employee-container h1 {
-    font-size: 2em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.employee-container img {
-    width:80%;
-    border-radius: 50%;
-    margin-top: 1.5vh;
-}
-
-.employee-container table {
-    width: 100%;
-}
-
-.employee-container th {
-    width: 33%;
-    font-weight: bold;
-}
-  
-.rank {
-    color: hsl(0, 0%, 30%);
-    font-size: 1.3em;
-}
-
-/* Equipment container */
-
-.equipment-main{
-    float: left;
-    margin-left:32vh;
-    width:100%;
-}
-
-.equipment-container {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 32%;
-    text-align: center;
-    float:left;
-    margin-left: 1%;
-    margin-bottom: 1vh;
-}
-
-.equipment-container h1 {
-    font-size: 2em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.equipment-container img {
-    width:98%;
-    height: 40vh;
-    margin-top: 1.5vh;
-}
-
-.equipment-container table {
-    width: 100%;
-    margin-bottom: 1.25vh;
-}
-
-.equipment-container th {
-    width: 33%;
-    font-weight: bold;
-}
-  
-.model {
-    color: hsl(0, 0%, 30%);
-    font-size: 1.3em;
-}
-
-.availability {
-    color: green;
+.names-box p {
+    border: 0.1em solid hsla(0, 100%, 60%, 0.5);
+    border-radius: 0.25em;
+    background-color: white;
+    padding: 0.25em;
+    font-size: 1.5em;
     font-weight: 500;
+    color: #A50321;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
-
 
 .parallax-firefighters {
     min-height: 300px;
