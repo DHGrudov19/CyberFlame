@@ -65,7 +65,7 @@ h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../images/safetyEarthquake1.jpg);  
+    background-image: url(../images/safety/safetyEarthquake1.jpg);  
 }
 
 .parallax-flood {
@@ -76,7 +76,7 @@ h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../images/safetyFlood3.jpg);
+    background-image: url(../images/safety/safetyFlood3.jpg);
 }
 
 .parallax-forestFire {
@@ -87,7 +87,7 @@ h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../images/safetyForestFire.jpg);
+    background-image: url(../images/safety/safetyForestFire.jpg);
 }
 
 .parallax-homefire {
@@ -98,5 +98,5 @@ h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../images/safetyHomeFire4.jpg);
+    background-image: url(../images/safety/safetyHomeFire4.jpg);
 }

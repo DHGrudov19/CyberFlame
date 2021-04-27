@@ -65,7 +65,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-image: url(../images/safety.png);
+    background-image: url(../images/styling/safety.png);
 }
 
 @media only screen and (max-width: 780px) {
