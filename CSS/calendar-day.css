@@ -15,32 +15,12 @@ th::selection, td::selection {
     background-color: #383838;
 }
 
-#heading1{
-    margin-top: 35%;
-    padding: 0.5em 1em;
-    color: white;
-    text-align: center;
-    letter-spacing: 0.25vw;
-    font-size: 2.25em;
-    font-weight: 500;
-    background-color: #383838;
-}
-
-.firefighters{
-    width: 40%;
-    float: left;
-    height: 60vh;
-    margin-top: 5vh;
-    margin-left: 10%;
-}
-
 .headings2{
-    margin-top: 0%;
     padding: 0.5em 1em;
     color: rgb(0, 0, 0);
     text-align: center;
     letter-spacing: 0.25vw;
-    font-size: 2.90em;
+    font-size: 2.75em;
     font-weight: 450;
 }
 
@@ -49,6 +29,15 @@ a{
 }
 
 /* Employees */
+.employees-on-duty {
+    height: 260vh;
+}
+
+.equipment-on-use {
+    height: 100%;
+    margin-bottom: 10vh;
+}
+
 .workers-header {
     float: left;
     width: 80%;
@@ -148,37 +137,6 @@ a{
     font-weight: 500;
 }
 
-/* Pagination */
-.pagination {
-    float: right;
-    margin: 2vh;
-}
-
-.pagination button {
-    color: black;
-    background-color: hsl(0, 0%, 85%);
-    float: left;
-    margin-right: 0.25vw;
-    padding: 0.75em 1.25em;
-    text-decoration: none;
-    border: none;
-    border-radius: 20%;
-    transition: background-color .3s;
-}
-
-.pagination button:hover:not(.active) {
-    background-color: hsl(0, 0%, 75%);
-}
-
-.pagination button.active {
-    background-color: #FF3333;
-    color: white;
-}
-
-.pagination button.active:hover {
-    background-color: #A50321;
-}
-
 
 .parallax-firefighters {
     min-height: 300px;
@@ -191,35 +149,3 @@ a{
 }
 
 /* Responsive */
-@media only screen and (max-width: 980px) {
-    .statistics-side, .statistics-header {
-        display: none;
-    }
-
-    .workers-header {
-        width: 100%;
-    }
-
-    .workers-main {
-        width: 100%;
-    }
-
-    .employee-container {
-        width: 32%;
-        margin-top: 1vh;
-    }
-}
-
-@media only screen and (max-width: 580px) {
-    .employee-container {
-        width: 49%;
-        margin-top: 1vh;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    .employee-container {
-        width: 100%;
-        margin-top: 1vh;
-    }
-}

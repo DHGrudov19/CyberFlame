@@ -16,17 +16,17 @@
     font-weight: 500;
 }
 
-#calendar h1::selection {
+h1::selection {
     background-color: #A50321;
     color: white;
 }
 
-#calendar ul {
+ul {
     margin: 0;
     padding: 0;
 }
 
-#calendar li {
+li {
     float: left;
     display: block;
     width: 14.285%;
@@ -38,17 +38,22 @@
     transition: 200ms ease;
 }
 
-#calendar li:nth-child(n+1):nth-child(-n+7) {
+a {
+    padding: 1em;
+    text-decoration: none;
+}
+
+li:nth-child(n+1):nth-child(-n+7) {
     font-weight: 900;
     color: #A50321;
 }
 
-#calendar li:nth-child(n+41), li:nth-child(n+8):nth-child(-n+10) {
+li:nth-child(n+41), li:nth-child(n+8):nth-child(-n+10) {
     font-weight: 900;
     color: rgba(0,0,0,.3);
 }
 
-#calendar li:hover:nth-child(n+11):nth-child(-n+40) {
+li:hover:nth-child(n+11):nth-child(-n+40) {
     border-radius: 3px;
     background-color: #FF3333;
     color: #ecf0f1;
@@ -62,8 +67,4 @@
     background-size: cover;
 
     background-image: url(../images/calendar.png);
-}
-
-a{
-    text-decoration:none;
 }
