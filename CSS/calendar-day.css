@@ -13,6 +13,7 @@ th::selection, td::selection {
     font-size: 2.25em;
     font-weight: 500;
     background-color: #383838;
+    overflow: hidden;
 }
 
 .headings2{
@@ -28,115 +29,20 @@ a{
     text-decoration: none;
 }
 
-/* Employees */
-.employees-on-duty {
-    height: 260vh;
+.names-box {
+    border: 3px solid gray;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 5vh;
 }
 
-.equipment-on-use {
-    height: 100%;
-    margin-bottom: 10vh;
+.names-box p {
+    border: 2px solid gray;
+    padding: 0.25em;
+    display: inline-block;
+    margin-left: 1vw;
 }
-
-.workers-header {
-    float: left;
-    width: 80%;
-    font-size: 3em;
-    text-align: center;
-}
-
-.workers-main {
-    float: left;
-    margin-left:20.50vh;
-    width:80%;
-}
-
-.employee-container {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 30%;
-    text-align: center;
-    float: left;
-    margin-left: 1.40vw;
-    margin-bottom: 1vh;
-  }
-
-.employee-container h1 {
-    font-size: 2em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.employee-container img {
-    width:80%;
-    border-radius: 50%;
-    margin-top: 1.5vh;
-}
-
-.employee-container table {
-    width: 100%;
-}
-
-.employee-container th {
-    width: 33%;
-    font-weight: bold;
-}
-  
-.rank {
-    color: hsl(0, 0%, 30%);
-    font-size: 1.3em;
-}
-
-/* Equipment container */
-
-.equipment-main{
-    float: left;
-    margin-left:32vh;
-    width:100%;
-}
-
-.equipment-container {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 32%;
-    text-align: center;
-    float:left;
-    margin-left: 1%;
-    margin-bottom: 1vh;
-}
-
-.equipment-container h1 {
-    font-size: 2em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.equipment-container img {
-    width:98%;
-    height: 40vh;
-    margin-top: 1.5vh;
-}
-
-.equipment-container table {
-    width: 100%;
-    margin-bottom: 1.25vh;
-}
-
-.equipment-container th {
-    width: 33%;
-    font-weight: bold;
-}
-  
-.model {
-    color: hsl(0, 0%, 30%);
-    font-size: 1.3em;
-}
-
-.availability {
-    color: green;
-    font-weight: 500;
-}
-
 
 .parallax-firefighters {
     min-height: 300px;
