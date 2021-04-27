@@ -106,7 +106,7 @@ th::selection, td::selection {
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-image: url(../images/firefighters-background.png);
+    background-image: url(../images/styling/firefighters-background.png);
 }
 
 /* Responsive */
